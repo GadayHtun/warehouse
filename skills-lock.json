@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "variance-analysis": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "finance/skills/variance-analysis/SKILL.md",
+      "computedHash": "f6036af48ef7db4f9d4de489afcd281bf51cdff5829ebe3fec068f39ddf76c77"
+    }
+  }
+}
