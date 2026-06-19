@@ -196,12 +196,15 @@ class ReconcilerEngine
             throw new ReasonTooShortException(strlen($resolutionNote), self::MINIMUM_REASON_LENGTH);
         }
 
-        $line->status = 'resolved';
         $line->resolution_type = 'accept';
         $line->resolution_note = $resolutionNote;
 
+        // Large-variance check MUST happen before status is set to resolved.
+        // Otherwise the line gets saved as "resolved" + "pending_approval"
+        // and the review page hides the approve/reject buttons.
         if ($this->isLargeVariance($line) && $line->large_variance_approval_status === 'not_required') {
             $line->large_variance_approval_status = 'pending_approval';
+            // Status stays 'pending' so the approve/reject buttons remain visible
             $line->save();
 
             throw new LargeVarianceRequiresApprovalException(
@@ -210,6 +213,8 @@ class ReconcilerEngine
                 $line->variance_percentage,
             );
         }
+
+        $line->status = 'resolved';
 
         if (!$this->isLargeVariance($line) || $line->large_variance_approval_status === 'approved') {
             $this->createAdjustment($line, $user);
@@ -263,6 +268,7 @@ class ReconcilerEngine
 
         $line->large_variance_approval_status = 'approved';
         $line->large_variance_approver_id = $approver->id;
+        $line->status = 'resolved';
         $line->save();
 
         $adjustment = $this->createAdjustment($line, $approver);
@@ -288,6 +294,7 @@ class ReconcilerEngine
 
         $line->large_variance_approval_status = 'rejected';
         $line->large_variance_approver_id = $rejector->id;
+        $line->status = 'pending';  // back to pending — needs re-resolution (recount/defer)
         $existingNote = $line->resolution_note ?? '';
         $line->resolution_note = trim($existingNote . "\n[REJECTED by {$rejector->name}]: " . $reason);
         $line->save();

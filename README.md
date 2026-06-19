@@ -155,3 +155,14 @@ docker compose down -v
 docker compose up -d --build
 docker compose exec app php artisan migrate
 ```
+
+**Run these two commands: login error**
+
+```bash
+docker compose down
+docker compose up -d
+
+docker compose exec app php artisan migrate
+docker compose exec app php artisan db:seed --class=UserSeeder
+```
+
