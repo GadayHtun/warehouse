@@ -1,13 +1,13 @@
-# 📦 Warehouse — Pitch Deck
-### 6 slides · 20 seconds each · ~2 minutes total
-
+---
+marp: true
+auto-advance: 20
 ---
 
-## Slide 1 — The Problem
+## The Problem
 
 **Inventory lies.**
 
-Stock levels drift. A shipment arrives, someone keys it in wrong. A picker grabs six units but marks two. A product sits untouched for six months while the reorder budget shrinks.
+Stock levels drift. A shipment arrives, someone keys it in wrong. A picker grabs six units but marks two. A product sits untouched for six months while the reorder budget shrinks. 'test'
 
 Most warehouses accept this. They run a cycle count once a quarter, file a PDF, and move on. By then the discrepancy is old, the money is gone, and nobody knows why.
 
@@ -15,11 +15,9 @@ Manual cycle counts are slow. Spreadsheets are error-prone. And most inventory s
 
 > **Warehouse doesn't accept drift. It detects it in real time.**
 
-⏱ 0:20 — Next: What is it?
-
 ---
 
-## Slide 2 — Platform Overview
+## Platform Overview
 
 **Warehouse** is an inventory control platform for multi-location operations — with an autonomous anomaly detection layer.
 
@@ -37,11 +35,9 @@ Manual cycle counts are slow. Spreadsheets are error-prone. And most inventory s
 
 > Think of it as the Laravel of warehouse management — expressive, structured, and designed to catch problems *before* they compound.
 
-⏱ 0:20 — Next: The killer feature.
-
 ---
 
-## Slide 3 — The Agent System
+## The Agent System
 
 **8 autonomous checks. Zero human effort.**
 
@@ -62,11 +58,9 @@ An *agent orchestrator* runs checks across every product × location pair. Each 
 
 > It's like having an auditor who never sleeps — and never repeats themselves.
 
-⏱ 0:20 — Next: Reconciliation workflow.
-
 ---
 
-## Slide 4 — Reconciliation That Closes the Loop
+## Reconciliation That Closes the Loop
 
 Cycle counts follow a **6-stage gated pipeline.** No shortcuts.
 
@@ -86,11 +80,9 @@ draft  →  in_progress  →  submitted  →  under_review  →  closed
 
 > Reconciliation isn't an afterthought. It's a structured, gated workflow with guardrails coded into the engine.
 
-⏱ 0:20 — Next: What you see.
-
 ---
 
-## Slide 5 — The Dashboard
+## The Dashboard
 
 One screen. Four key metrics. Immediate situational awareness.
 
@@ -122,11 +114,9 @@ One screen. Four key metrics. Immediate situational awareness.
 
 > A supervisor opens this, scans four numbers, and knows if it's a quiet day or an all-hands moment.
 
-⏱ 0:20 — Next: Stack and roadmap.
-
 ---
 
-## Slide 6 — Stack & Roadmap
+## Stack & Roadmap
 
 **Built on a modern, fully containerized stack:**
 
@@ -150,7 +140,3 @@ One screen. Four key metrics. Immediate situational awareness.
 - ⚡ **Redis queues** — swap `database` queue driver for `redis` at production throughput
 
 > **Warehouse** is a complete, live-tested, and running foundation. Two reconciliation sessions closed. All large-variance guardrails verified. Ready for the next phase.
-
----
-
-*Built with Laravel · Dockerized · 8 agents running · 2 sessions closed · Zero open findings*
