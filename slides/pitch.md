@@ -7,7 +7,7 @@ auto-advance: 20
 
 **Inventory lies.**
 
-Stock levels drift. A shipment arrives, someone keys it in wrong. A picker grabs six units but marks two. A product sits untouched for six months while the reorder budget shrinks.
+Stock levels drift. A shipment arrives, someone keys it in wrong. A picker grabs six units but marks two. A product sits untouched for six months while the reorder budget shrinks. 'test'
 
 Most warehouses accept this. They run a cycle count once a quarter, file a PDF, and move on. By then the discrepancy is old, the money is gone, and nobody knows why.
 
