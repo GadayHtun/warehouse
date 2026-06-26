@@ -13,6 +13,9 @@ chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 # Run migrations
 php artisan migrate --force || true
 
+# Seed database (only if users table is empty)
+php artisan db:seed --force --class=DatabaseSeeder || true
+
 # Cache config (after env is loaded)
 php artisan config:cache || true
 php artisan route:cache || true
