@@ -1,0 +1,58 @@
+FROM php:8.4-fpm
+
+# Install system dependencies + Nginx + Supervisor
+RUN apt-get update && apt-get install -y \
+    libicu-dev \
+    libzip-dev \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    nginx \
+    supervisor \
+    unzip \
+    curl \
+    && docker-php-ext-install \
+    intl \
+    zip \
+    pdo \
+    pdo_mysql \
+    pdo_sqlite \
+    mbstring \
+    gd \
+    bcmath \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www
+
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --no-interaction --no-scripts --optimize-autoloader
+
+COPY . .
+
+RUN composer run-script post-autoload-dump && \
+    php artisan config:cache && \
+    php artisan route:cache && \
+    php artisan view:cache
+
+# Create SQLite database
+RUN touch /var/www/storage/database.sqlite && \
+    chown www-data:www-data /var/www/storage/database.sqlite
+
+# Run migrations
+RUN php artisan migrate --force
+
+# Create required directories
+RUN chown -R www-data:www-data storage bootstrap/cache
+
+# Nginx config
+COPY docker/nginx/default-render.conf /etc/nginx/sites-available/default
+
+# Supervisor config
+COPY docker/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+EXPOSE 10000
+
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
