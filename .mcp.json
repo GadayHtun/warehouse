@@ -9,5 +9,9 @@
     "headers": {
       "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
     }
+  },
+  "chrome-devtools": {
+    "command": "npx",
+    "args": ["-y", "@anthropic-ai/chrome-devtools-mcp"]
   }
 }
