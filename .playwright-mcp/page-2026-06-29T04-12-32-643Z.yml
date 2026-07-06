@@ -1,0 +1,7 @@
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - heading "The information you’re about to submit is not secure" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Because this form is being submitted using a connection that’s not secure, your information will be visible to others.
+  - generic [ref=e8]:
+    - button "Go back" [ref=e9] [cursor=pointer]
+    - button "Send anyway" [ref=e10] [cursor=pointer]
