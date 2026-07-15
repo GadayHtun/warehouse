@@ -59,6 +59,27 @@ class StockController extends Controller
             ->with('success', 'Stock-in recorded. Transaction #' . $result['transaction']->id);
     }
 
+    /**
+     * API: return current stock levels for a product, grouped by location.
+     */
+    public function stockLevels(Request $request)
+    {
+        $request->validate([
+            'product_id' => ['required', 'exists:products,id'],
+        ]);
+
+        $levels = \App\Models\CurrentStock::query()
+            ->where('product_id', $request->product_id)
+            ->with('location:id,name,code')
+            ->get()
+            ->map(fn ($s) => [
+                'location' => $s->location->code . ' — ' . $s->location->name,
+                'quantity' => $s->quantity_on_hand,
+            ]);
+
+        return response()->json(['levels' => $levels]);
+    }
+
     public function createOut()
     {
         $products = Product::query()->orderBy('name')->get();
