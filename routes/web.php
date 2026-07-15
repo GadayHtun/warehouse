@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
         Route::post('/in', [StockController::class, 'storeIn'])->name('in.store');
         Route::get('/out', [StockController::class, 'createOut'])->name('out.create');
         Route::post('/out', [StockController::class, 'storeOut'])->name('out.store');
+        Route::get('/levels', [StockController::class, 'stockLevels'])->name('levels');
     });
 
     // ───────────────────────────────

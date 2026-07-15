@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
             LocationSeeder::class,
             SupplierSeeder::class,
             ProductSeeder::class,
+            StockSeeder::class,
         ]);
     }
 }
