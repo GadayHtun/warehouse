@@ -11,7 +11,7 @@ services:
       - key: APP_DEBUG
         value: "false"
       - key: APP_URL
-        value: https://warehouse.onrender.com
+        value: https://warehouse-mesm.onrender.com
       - key: DB_CONNECTION
         value: sqlite
       - key: DB_DATABASE
