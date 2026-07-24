@@ -1,0 +1,47 @@
+- generic [active] [ref=f15e1]:
+  - navigation [ref=f15e2]:
+    - generic [ref=f15e4]:
+      - generic [ref=f15e5]:
+        - link "📦 Warehouse" [ref=f15e6] [cursor=pointer]:
+          - /url: https://warehouse-mesm.onrender.com
+        - generic [ref=f15e7]:
+          - link "Dashboard" [ref=f15e8] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com
+          - link "Stock" [ref=f15e9] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/stock
+          - link "Reconciliation" [ref=f15e10] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/reconciliation
+          - link "Findings" [ref=f15e11] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/findings
+      - generic [ref=f15e12]:
+        - button "Toggle dark mode" [ref=f15e13] [cursor=pointer]
+        - generic [ref=f15e16]: Sarah Supervisor (Supervisor)
+        - button "Logout" [ref=f15e18] [cursor=pointer]
+  - main [ref=f15e19]:
+    - generic [ref=f15e20]:
+      - heading "Agent Findings" [level=1] [ref=f15e21]
+      - generic [ref=f15e22]:
+        - link "Open (0)" [ref=f15e23] [cursor=pointer]:
+          - /url: "?status=open"
+        - link "Critical (0)" [ref=f15e24] [cursor=pointer]:
+          - /url: "?severity=critical"
+        - link "Warning (0)" [ref=f15e25] [cursor=pointer]:
+          - /url: "?severity=warning"
+        - link "Info (0)" [ref=f15e26] [cursor=pointer]:
+          - /url: "?severity=info"
+        - link "Acknowledged (0)" [ref=f15e27] [cursor=pointer]:
+          - /url: "?status=acknowledged"
+        - link "Dismissed (0)" [ref=f15e28] [cursor=pointer]:
+          - /url: "?status=dismissed"
+      - table [ref=f15e30]:
+        - rowgroup [ref=f15e31]:
+          - row [ref=f15e32]:
+            - columnheader "Severity" [ref=f15e33]
+            - columnheader "Check Type" [ref=f15e34]
+            - columnheader "Title" [ref=f15e35]
+            - columnheader "Product / Location" [ref=f15e36]
+            - columnheader "Detected" [ref=f15e37]
+            - columnheader "Actions" [ref=f15e38]
+        - rowgroup [ref=f15e39]:
+          - row [ref=f15e40]:
+            - cell "No findings match these filters. The system is running smoothly." [ref=f15e41]

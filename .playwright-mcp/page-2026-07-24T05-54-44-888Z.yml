@@ -1,0 +1,48 @@
+- generic [ref=f5e2]:
+  - generic [ref=f5e6]:
+    - generic [ref=f5e7]:
+      - generic [ref=f5e8]: 📦
+      - heading "Warehouse" [level=1] [ref=f5e10]
+      - paragraph [ref=f5e11]: Inventory Control Platform
+    - generic [ref=f5e12]:
+      - generic [ref=f5e17]:
+        - paragraph [ref=f5e18]: Real-Time Anomaly Detection
+        - paragraph [ref=f5e19]: 8 autonomous checks catch issues before they compound
+      - generic [ref=f5e24]:
+        - paragraph [ref=f5e25]: 6-Stage Reconciliation
+        - paragraph [ref=f5e26]: Gated pipeline with large-variance guardrails
+      - generic [ref=f5e31]:
+        - paragraph [ref=f5e32]: Role-Based Access
+        - paragraph [ref=f5e33]: Admin, Supervisor, and Agent tiers with audit logging
+  - generic [ref=f5e36]:
+    - button "Toggle dark mode" [ref=f5e38] [cursor=pointer]
+    - generic [ref=f5e41]:
+      - heading "Welcome back" [level=2] [ref=f5e42]
+      - paragraph [ref=f5e43]: Sign in to your inventory platform
+    - generic [ref=f5e45]:
+      - generic [ref=f5e46]:
+        - generic [ref=f5e47]: Email address
+        - textbox "Email address" [active] [ref=f5e48]:
+          - /placeholder: you@company.com
+      - generic [ref=f5e49]:
+        - generic [ref=f5e50]: Password
+        - textbox "Password" [ref=f5e51]:
+          - /placeholder: Enter your password
+      - generic [ref=f5e53] [cursor=pointer]:
+        - checkbox "Remember me" [ref=f5e54]
+        - generic [ref=f5e55]: Remember me
+      - button "Sign In" [ref=f5e56] [cursor=pointer]
+    - generic [ref=f5e57]:
+      - paragraph [ref=f5e58]: Demo Credentials
+      - generic [ref=f5e59]:
+        - generic [ref=f5e60]:
+          - generic [ref=f5e61]: Admin
+          - generic [ref=f5e62]: admin@warehouse.test
+        - generic [ref=f5e63]:
+          - generic [ref=f5e64]: Supervisor
+          - generic [ref=f5e65]: supervisor@warehouse.test
+        - generic [ref=f5e66]:
+          - generic [ref=f5e67]: Agent
+          - generic [ref=f5e68]: agent@warehouse.test
+        - generic [ref=f5e69]: "Password: password"
+    - paragraph [ref=f5e70]: Warehouse Inventory Control Platform

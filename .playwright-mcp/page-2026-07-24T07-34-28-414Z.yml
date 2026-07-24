@@ -1,0 +1,79 @@
+- generic [active] [ref=f5e1]:
+  - navigation [ref=f5e2]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - link "📦 Warehouse" [ref=f5e6] [cursor=pointer]:
+          - /url: https://warehouse-mesm.onrender.com
+        - generic [ref=f5e7]:
+          - link "Dashboard" [ref=f5e8] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com
+          - link "Stock" [ref=f5e9] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/stock
+          - link "Reconciliation" [ref=f5e10] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/reconciliation
+          - link "Findings" [ref=f5e11] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/findings
+      - generic [ref=f5e12]:
+        - button "Toggle dark mode" [ref=f5e13] [cursor=pointer]
+        - generic [ref=f5e16]: Sarah Supervisor (Supervisor)
+        - button "Logout" [ref=f5e18] [cursor=pointer]
+  - main [ref=f5e19]:
+    - generic [ref=f5e20]:
+      - heading "Record Stock In" [level=1] [ref=f5e21]
+      - generic [ref=f5e22]:
+        - generic [ref=f5e23]:
+          - generic [ref=f5e24]: Product *
+          - combobox "Product *" [ref=f5e25]:
+            - option "Select product..." [selected]
+            - option "CLN-003 — All-Purpose Cleaner 750ml"
+            - option "GRC-006 — Canned Tomatoes 400g"
+            - option "SNK-002 — Chocolate Bar 100g"
+            - option "BEV-001 — Cola Can 330ml"
+            - option "SNK-004 — Cookies Pack 250g"
+            - option "GRC-002 — Cooking Oil 1L"
+            - option "CLN-002 — Dish Soap 500ml"
+            - option "BEV-004 — Energy Drink 250ml"
+            - option "DAI-001 — Fresh Milk 1L"
+            - option "BEV-005 — Green Tea 500ml"
+            - option "CLN-001 — Laundry Detergent 2L"
+            - option "BEV-003 — Mineral Water 500ml"
+            - option "SNK-003 — Mixed Nuts 200g"
+            - option "BEV-002 — Orange Juice 1L"
+            - option "CLN-004 — Paper Towels 6-Roll"
+            - option "GRC-005 — Pasta 500g"
+            - option "SNK-001 — Potato Chips 150g"
+            - option "GRC-001 — Rice 5kg Bag"
+            - option "GRC-004 — Sugar 1kg"
+            - option "GRC-003 — Wheat Flour 2kg"
+        - generic [ref=f5e26]:
+          - generic [ref=f5e27]: Location *
+          - combobox "Location *" [ref=f5e28]:
+            - option "Select location..." [selected]
+            - option "Downtown Store (ST-01)"
+            - option "Main Warehouse (WH-A)"
+            - option "Mall Kiosk (ST-02)"
+            - option "North Distribution Center (WH-B)"
+        - generic [ref=f5e29]:
+          - generic [ref=f5e30]: Quantity *
+          - spinbutton "Quantity *" [ref=f5e31]
+        - generic [ref=f5e32]:
+          - generic [ref=f5e33]: Unit Cost (optional)
+          - spinbutton "Unit Cost (optional)" [ref=f5e34]
+        - generic [ref=f5e35]:
+          - generic [ref=f5e36]: Supplier (optional)
+          - combobox "Supplier (optional)" [ref=f5e37]:
+            - option "No supplier" [selected]
+            - option "Beverage Co. Ltd"
+            - option "Global Foods Inc."
+            - option "Snacks Unlimited"
+            - option "TechParts Distributors"
+        - generic [ref=f5e38]:
+          - generic [ref=f5e39]: Batch / Lot (optional)
+          - textbox "Batch / Lot (optional)" [ref=f5e40]
+        - generic [ref=f5e41]:
+          - generic [ref=f5e42]: Reference Note (optional)
+          - textbox "Reference Note (optional)" [ref=f5e43]
+        - generic [ref=f5e44]:
+          - button "Record Stock In" [ref=f5e45] [cursor=pointer]
+          - link "Cancel" [ref=f5e46] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/stock

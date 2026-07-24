@@ -1,0 +1,53 @@
+- generic [active] [ref=f7e1]:
+  - navigation [ref=f7e2]:
+    - generic [ref=f7e4]:
+      - generic [ref=f7e5]:
+        - link "📦 Warehouse" [ref=f7e6] [cursor=pointer]:
+          - /url: https://warehouse-mesm.onrender.com
+        - generic [ref=f7e7]:
+          - link "Dashboard" [ref=f7e8] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com
+          - link "Stock" [ref=f7e9] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/stock
+          - link "Reconciliation" [ref=f7e10] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/reconciliation
+          - link "Findings" [ref=f7e11] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/findings
+      - generic [ref=f7e12]:
+        - button "Toggle dark mode" [ref=f7e13] [cursor=pointer]
+        - generic [ref=f7e16]: Sarah Supervisor (Supervisor)
+        - button "Logout" [ref=f7e18] [cursor=pointer]
+  - main [ref=f7e19]:
+    - generic [ref=f7e20]:
+      - generic [ref=f7e21]:
+        - heading "Reconciliation Sessions" [level=1] [ref=f7e22]
+        - link "+ New Session" [ref=f7e23] [cursor=pointer]:
+          - /url: https://warehouse-mesm.onrender.com/reconciliation/create
+      - table [ref=f7e25]:
+        - rowgroup [ref=f7e26]:
+          - row [ref=f7e27]:
+            - columnheader "ID" [ref=f7e28]
+            - columnheader "Location" [ref=f7e29]
+            - columnheader "Started By" [ref=f7e30]
+            - columnheader "Status" [ref=f7e31]
+            - columnheader "Started" [ref=f7e32]
+            - columnheader [ref=f7e33]
+        - rowgroup [ref=f7e34]:
+          - row [ref=f7e35]:
+            - cell "#2" [ref=f7e36]
+            - cell "Main Warehouse" [ref=f7e37]
+            - cell "Sarah Supervisor" [ref=f7e38]
+            - cell "submitted" [ref=f7e39]
+            - cell "47 minutes ago" [ref=f7e40]
+            - cell [ref=f7e41]:
+              - link "Review →" [ref=f7e42] [cursor=pointer]:
+                - /url: https://warehouse-mesm.onrender.com/reconciliation/2/review
+          - row [ref=f7e43]:
+            - cell "#1" [ref=f7e44]
+            - cell "Downtown Store" [ref=f7e45]
+            - cell "Sarah Supervisor" [ref=f7e46]
+            - cell "submitted" [ref=f7e47]
+            - cell "48 minutes ago" [ref=f7e48]
+            - cell [ref=f7e49]:
+              - link "Review →" [ref=f7e50] [cursor=pointer]:
+                - /url: https://warehouse-mesm.onrender.com/reconciliation/1/review

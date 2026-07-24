@@ -1,0 +1,81 @@
+- generic [active] [ref=f1e1]:
+  - navigation [ref=f1e2]:
+    - generic [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - link "📦 Warehouse" [ref=f1e6] [cursor=pointer]:
+          - /url: https://warehouse-mesm.onrender.com
+        - generic [ref=f1e7]:
+          - link "Dashboard" [ref=f1e8] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com
+          - link "Stock" [ref=f1e9] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/stock
+          - link "Reconciliation" [ref=f1e10] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/reconciliation
+          - link "Findings" [ref=f1e11] [cursor=pointer]:
+            - /url: https://warehouse-mesm.onrender.com/findings
+      - generic [ref=f1e12]:
+        - button "Toggle dark mode" [ref=f1e13] [cursor=pointer]
+        - generic [ref=f1e16]: Sarah Supervisor (Supervisor)
+        - button "Logout" [ref=f1e18] [cursor=pointer]
+  - main [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]:
+        - heading "Warehouse Reconciliation Dashboard" [level=1] [ref=f1e22]
+        - paragraph [ref=f1e23]: Operational overview as of 2026-07-24 06:57:23
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]: Pending Reconciliation
+          - generic [ref=f1e27]: "2"
+          - generic [ref=f1e28]: Sessions awaiting review
+        - generic [ref=f1e29]:
+          - generic [ref=f1e30]: Agent Findings
+          - generic [ref=f1e31]:
+            - generic [ref=f1e32]: "0"
+            - generic [ref=f1e33]: Total open
+          - generic [ref=f1e34]:
+            - generic [ref=f1e35]: 0 crit
+            - generic [ref=f1e36]: 0 warn
+            - generic [ref=f1e37]: 0 info
+        - generic [ref=f1e38]:
+          - generic [ref=f1e39]: Variance at a Glance (30d)
+          - generic [ref=f1e40]: 51,080.0u
+          - generic [ref=f1e41]:
+            - generic [ref=f1e42]: +0 over
+            - generic [ref=f1e43]: "-4 under"
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: Low Stock Items
+          - generic [ref=f1e46]: "15"
+          - generic [ref=f1e47]: Below reorder point
+      - generic [ref=f1e48]:
+        - heading "Recent Stock Movements" [level=2] [ref=f1e50]
+        - table [ref=f1e51]:
+          - rowgroup [ref=f1e52]:
+            - row [ref=f1e53]:
+              - columnheader "Product" [ref=f1e54]
+              - columnheader "Direction" [ref=f1e55]
+              - columnheader "Qty" [ref=f1e56]
+              - columnheader "Location" [ref=f1e57]
+              - columnheader "User" [ref=f1e58]
+              - columnheader "Date" [ref=f1e59]
+          - rowgroup [ref=f1e60]:
+            - row [ref=f1e61]:
+              - cell "Laundry Detergent 2L" [ref=f1e62]
+              - cell "out" [ref=f1e63]
+              - cell "20.000" [ref=f1e64]
+              - cell "Mall Kiosk" [ref=f1e65]
+              - cell "Sarah Supervisor" [ref=f1e66]
+              - cell "9 minutes ago" [ref=f1e67]
+            - row [ref=f1e68]:
+              - cell "Rice 5kg Bag" [ref=f1e69]
+              - cell "in" [ref=f1e70]
+              - cell "45000.000" [ref=f1e71]
+              - cell "Main Warehouse" [ref=f1e72]
+              - cell "Sarah Supervisor" [ref=f1e73]
+              - cell "9 minutes ago" [ref=f1e74]
+            - row [ref=f1e75]:
+              - cell "Orange Juice 1L" [ref=f1e76]
+              - cell "in" [ref=f1e77]
+              - cell "50000.000" [ref=f1e78]
+              - cell "Downtown Store" [ref=f1e79]
+              - cell "Sarah Supervisor" [ref=f1e80]
+              - cell "10 minutes ago" [ref=f1e81]

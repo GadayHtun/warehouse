@@ -1,0 +1,48 @@
+- generic [ref=e2]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: 📦
+      - heading "Warehouse" [level=1] [ref=e10]
+      - paragraph [ref=e11]: Inventory Control Platform
+    - generic [ref=e12]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Real-Time Anomaly Detection
+        - paragraph [ref=e19]: 8 autonomous checks catch issues before they compound
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: 6-Stage Reconciliation
+        - paragraph [ref=e26]: Gated pipeline with large-variance guardrails
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Role-Based Access
+        - paragraph [ref=e33]: Admin, Supervisor, and Agent tiers with audit logging
+  - generic [ref=e36]:
+    - button "Toggle dark mode" [ref=e38] [cursor=pointer]
+    - generic [ref=e41]:
+      - heading "Welcome back" [level=2] [ref=e42]
+      - paragraph [ref=e43]: Sign in to your inventory platform
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: Email address
+        - textbox "Email address" [active] [ref=e48]:
+          - /placeholder: you@company.com
+      - generic [ref=e49]:
+        - generic [ref=e50]: Password
+        - textbox "Password" [ref=e51]:
+          - /placeholder: Enter your password
+      - generic [ref=e53] [cursor=pointer]:
+        - checkbox "Remember me" [ref=e54]
+        - generic [ref=e55]: Remember me
+      - button "Sign In" [ref=e56] [cursor=pointer]
+    - generic [ref=e57]:
+      - paragraph [ref=e58]: Demo Credentials
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Admin
+          - generic [ref=e62]: admin@warehouse.test
+        - generic [ref=e63]:
+          - generic [ref=e64]: Supervisor
+          - generic [ref=e65]: supervisor@warehouse.test
+        - generic [ref=e66]:
+          - generic [ref=e67]: Agent
+          - generic [ref=e68]: agent@warehouse.test
+        - generic [ref=e69]: "Password: password"
+    - paragraph [ref=e70]: Warehouse Inventory Control Platform
