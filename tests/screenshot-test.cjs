@@ -3,7 +3,7 @@
 
 const { chromium } = require('playwright');
 
-const BASE_URL = 'https://warehouse.onrender.com';
+const BASE_URL = 'https://warehouse-mesm.onrender.com/';
 const SCREENSHOT_DIR = './screenshots';
 
 async function takeScreenshots() {

@@ -7,7 +7,7 @@ async function debug() {
   try {
     // Navigate and wait
     console.log('Going to site...');
-    const response = await page.goto('https://warehouse.onrender.com/login', {
+    const response = await page.goto('https://warehouse-mesm.onrender.com/login', {
       timeout: 120000,
       waitUntil: 'domcontentloaded'
     });
